@@ -7,7 +7,7 @@
 
 This project actually started with an exam question.
 
-During my 4th semester in **Microprocessors and Interfacing**, one question kept appearing in different papers:
+During my 4th semester in **Microprocessors and Interfacing**, one question kept appearing in different papers -
 
 > **"Design AND, NAND, OR, RAM and ROM using discrete components."**
 
@@ -59,11 +59,10 @@ The project covers:
 
 - BC547B NPN transistors
 - 10 kΩ resistors
-- 5 V DC supply
+- 3V Coin Cell
 - Breadboard
-- Jumper wires
-- LEDs / output indicators
-- Multimeter
+- Hookup wires
+- LED
 
 ### Software
 
@@ -73,7 +72,7 @@ The project covers:
 
 ## Basic Principle
 
-The BC547B is used as a switching device.
+I've used the BC547B as a switching device.
 
 ### Transistor OFF
 
