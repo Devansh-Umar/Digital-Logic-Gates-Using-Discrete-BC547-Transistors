@@ -43,13 +43,13 @@ The project covers:
 
 | Gate | Boolean Expression |
 |---|---|
-| NOT | `Y = A̅` |
-| AND | `Y = A·B` |
-| NAND | `Y = (A·B)̅` |
-| OR | `Y = A+B` |
-| NOR | `Y = (A+B)̅` |
-| XOR | `Y = A ⊕ B` |
-| XNOR | `Y = (A ⊕ B)̅` |
+| NOT | Y = A` |
+| NOR | Y = (A+B)` |
+| OR | Y = A+B |
+| NAND | Y = (A.B)` |
+| AND | Y = A.B |
+| XOR | Y = A ⊕ B |
+| XNOR | Y = (A ⊕ B)`|
 
 ---
 
@@ -72,13 +72,44 @@ The project covers:
 
 ## Basic Principle
 
-I've used the BC547B as a switching device.
+The BC547 is an NPN bipolar junction transistor.
 
-### Transistor OFF
+For the logic circuits transistor is operated primarily as a switching device.
+
+When the base voltage is sufficiently low -
 
 ```text
-Input LOW
+Base LOW
     ↓
 Transistor OFF
     ↓
+Collector current ≈ 0
+    ↓
 Collector resistor pulls output HIGH
+
+Therefore,
+
+VOUT​ ≈ VCC​
+```
+
+When the base receives a sufficiently high voltage -
+
+```text
+Base HIGH
+    ↓
+Transistor ON
+    ↓
+Collector current flows
+    ↓
+Output is pulled toward GND
+
+Therefore,
+
+VOUT​ ≈ 0V
+```
+
+This switching behavior is the fundamental principle used to construct the logic gates.
+
+
+See the full project report -
+[Logic_Gates_(BC547)_Report.pdf](Logic_Gates_(BC547)_Report.pdf)
